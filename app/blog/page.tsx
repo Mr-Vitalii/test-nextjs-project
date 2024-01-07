@@ -6,10 +6,6 @@ import { useEffect, useState } from "react";
 import { getAllPosts } from "@/services/getPosts";
 import { PostSearch } from "@/components/PostSearch";
 
-export const metadata: Metadata = {
-  title: "Blog posts",
-};
-
 export default function Blog() {
   const [posts, setPosts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
